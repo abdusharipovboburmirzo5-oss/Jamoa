@@ -3,30 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yashil Yer - Ekologik Platforma</title>
+    <title>EcoWorld | Yashil Yer</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="leaf-loader">
+                <i class="fas fa-leaf"></i>
+            </div>
+            <p>Yashil Yer Yuklanmoqda...</p>
+        </div>
+    </div>
+
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar glass">
         <div class="nav-container">
             <div class="nav-logo">
-                <i class="fas fa-leaf"></i>
-                <span>Yashil Yer</span>
+                <div class="logo-icon">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <span>EcoWorld</span>
             </div>
+            
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Bosh Sahifa</a></li>
-                <li><a href="#monitoring" class="nav-link">Monitoring</a></li>
-                <li><a href="#projects" class="nav-link">Loyihalar</a></li>
-                <li><a href="#ranking" class="nav-link">Reyting</a></li>
-                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Bosh Sahifa</a></li>
+                <li><a href="#monitoring" class="nav-link"><i class="fas fa-chart-line"></i> Monitoring</a></li>
+                <li><a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> Loyihalar</a></li>
+                <li><a href="#map" class="nav-link"><i class="fas fa-map-marked-alt"></i> Xarita</a></li>
+                <li><a href="#ranking" class="nav-link"><i class="fas fa-trophy"></i> Reyting</a></li>
+                <li><a href="#shop" class="nav-link"><i class="fas fa-shopping-bag"></i> Eko-Dokon</a></li>
+                <li><a href="#blog" class="nav-link"><i class="fas fa-blog"></i> Blog</a></li>
             </ul>
-            <div class="nav-buttons">
-                <button class="btn-login">Kirish</button>
-                <button class="btn-register">Ro'yxatdan o'tish</button>
+
+            <div class="nav-actions">
+                <div class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <div class="user-profile">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face" alt="User">
+                </div>
+                <button class="btn-primary nav-cta">
+                    <i class="fas fa-rocket"></i> Qo'shilish
+                </button>
             </div>
+
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -37,143 +62,292 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Yashil Yer - <span>Kelajagimiz</span> Sening Qo'linda</h1>
-            <p class="hero-description">
-                Atrof-muhitni muhofaza qilish, energiya tejash va chiqindilarni qayta ishlash 
-                bo'yicha jamoamizga qo'shiling. Har bir kichik harakat katta o'zgarishlar keltiradi!
-            </p>
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <h3>15,847</h3>
-                    <p>Faol Foydalanuvchi</p>
-                </div>
-                <div class="stat-item">
-                    <h3>45,231</h3>
-                    <p>Ekilgan Daraxt</p>
-                </div>
-                <div class="stat-item">
-                    <h3>128.5T</h3>
-                    <p>Tejangan CO2</p>
-                </div>
-            </div>
-            <div class="hero-buttons">
-                <button class="btn-primary">Loyihaga Qo'shilish</button>
-                <button class="btn-secondary">Ko'proq Bilish</button>
+        <div class="hero-bg">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
             </div>
         </div>
-        <div class="hero-visual">
-            <div class="earth-animation">
-                <div class="earth"></div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-up">
+                    <div class="badge">
+                        <i class="fas fa-globe-americas"></i>
+                        Global Ekologik Platforma
+                    </div>
+                    <h1 class="hero-title">
+                        Kelajagimizni 
+                        <span class="gradient-text">Yashil</span> 
+                        Qilamiz
+                    </h1>
+                    <p class="hero-description">
+                        1 million+ foydalanuvchi bilan birgalikda atrof-muhitni muhofaza qilamiz, 
+                        energiya tejaymiz va yashil kelajak uchun kurashamiz. Har bir harakat - bu o'zgarish!
+                    </p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>1.2M+</h3>
+                                <p>Faol Foydalanuvchi</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-tree"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>4.8M+</h3>
+                                <p>Ekilgan Daraxt</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-recycle"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>856K+</h3>
+                                <p>Tonna Chiqindi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-actions">
+                        <button class="btn-primary btn-large">
+                            <i class="fas fa-play"></i>
+                            Loyihani Boshlash
+                        </button>
+                        <button class="btn-secondary btn-large">
+                            <i class="fas fa-video"></i>
+                            Demo Ko'rish
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hero-visual" data-aos="fade-left">
+                    <div class="earth-container">
+                        <div class="earth-sphere">
+                            <div class="earth-texture"></div>
+                            <div class="earth-glow"></div>
+                        </div>
+                        <div class="floating-data">
+                            <div class="data-point air-quality">
+                                <i class="fas fa-wind"></i>
+                                <span>Havo 85%</span>
+                            </div>
+                            <div class="data-point water-quality">
+                                <i class="fas fa-tint"></i>
+                                <span>Suv 92%</span>
+                            </div>
+                            <div class="data-point forest-cover">
+                                <i class="fas fa-tree"></i>
+                                <span>O'rmon 78%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Monitoring Section -->
+    <!-- Features Grid -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Nega Bizni Tanlashadi?</h2>
+                <p>Eng yangi texnologiyalar va innovatsion yondashuvlar</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card" data-aos="zoom-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI Monitoring</h3>
+                    <p>Sun'iy intellekt yordamida atrof-muhitni 24/7 monitoring qilish</p>
+                    <div class="feature-badge">AI</div>
+                </div>
+
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile First</h3>
+                    <p>Har qanday qurilmada mukammal ishlaydigan interfeys</p>
+                    <div class="feature-badge">PWA</div>
+                </div>
+
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-network"></i>
+                    </div>
+                    <h3>Real-time Data</h3>
+                    <p>Dunyoning har bir nuqtasidan real vaqt rejimida ma'lumotlar</p>
+                    <div class="feature-badge">Live</div>
+                </div>
+
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Xavfsizlik</h3>
+                    <p>Bank darajasidagi xavfsizlik va ma'lumotlarni himoyalash</p>
+                    <div class="feature-badge">SSL</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Monitoring Dashboard -->
     <section id="monitoring" class="monitoring">
         <div class="container">
-            <h2 class="section-title">Ekologik Monitoring</h2>
-            <div class="monitoring-grid">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Real-vaqt Monitoringi</h2>
+                <p>Dunyoning ekologik holatini kuzatib boring</p>
+            </div>
+
+            <div class="monitoring-dashboard">
                 <!-- Air Quality -->
-                <div class="monitor-card air-quality">
+                <div class="dashboard-card air-card" data-aos="fade-right">
                     <div class="card-header">
-                        <i class="fas fa-wind"></i>
-                        <h3>Havo Sifati</h3>
+                        <div class="card-title">
+                            <i class="fas fa-wind"></i>
+                            <h3>Havo Sifati</h3>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn-icon"><i class="fas fa-expand"></i></button>
+                        </div>
                     </div>
                     <div class="card-content">
-                        <div class="quality-index" id="airIndex">85</div>
-                        <div class="quality-status" id="airStatus">Yaxshi</div>
-                        <div class="quality-details">
-                            <div class="detail-item">
-                                <span>PM2.5</span>
-                                <span class="value">12 µg/m³</span>
+                        <div class="gauge-container">
+                            <div class="gauge" data-value="78">
+                                <div class="gauge-fill"></div>
+                                <div class="gauge-cover">78%</div>
                             </div>
-                            <div class="detail-item">
-                                <span>PM10</span>
-                                <span class="value">25 µg/m³</span>
+                        </div>
+                        <div class="metrics-grid">
+                            <div class="metric">
+                                <span class="metric-label">PM2.5</span>
+                                <span class="metric-value">12 µg/m³</span>
                             </div>
-                            <div class="detail-item">
-                                <span>CO2</span>
-                                <span class="value">420 ppm</span>
+                            <div class="metric">
+                                <span class="metric-label">PM10</span>
+                                <span class="metric-value">25 µg/m³</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">CO2</span>
+                                <span class="metric-value">420 ppm</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">UV Index</span>
+                                <span class="metric-value">3</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Water Quality -->
-                <div class="monitor-card water-quality">
+                <div class="dashboard-card water-card" data-aos="fade-left">
                     <div class="card-header">
-                        <i class="fas fa-tint"></i>
-                        <h3>Suv Sifati</h3>
+                        <div class="card-title">
+                            <i class="fas fa-tint"></i>
+                            <h3>Suv Sifati</h3>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn-icon"><i class="fas fa-expand"></i></button>
+                        </div>
                     </div>
                     <div class="card-content">
-                        <div class="quality-index" id="waterIndex">78</div>
-                        <div class="quality-status" id="waterStatus">O'rtacha</div>
-                        <div class="quality-details">
-                            <div class="detail-item">
-                                <span>pH Darajasi</span>
-                                <span class="value">7.2</span>
+                        <div class="quality-indicators">
+                            <div class="indicator">
+                                <div class="indicator-bar">
+                                    <div class="indicator-fill" style="height: 85%"></div>
+                                </div>
+                                <span>pH</span>
                             </div>
-                            <div class="detail-item">
-                                <span>Ifloslanish</span>
-                                <span class="value">15%</span>
+                            <div class="indicator">
+                                <div class="indicator-bar">
+                                    <div class="indicator-fill" style="height: 70%"></div>
+                                </div>
+                                <span>Tozalik</span>
+                            </div>
+                            <div class="indicator">
+                                <div class="indicator-bar">
+                                    <div class="indicator-fill" style="height: 60%"></div>
+                                </div>
+                                <span>Oksigen</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Waste Management -->
-                <div class="monitor-card waste-management">
+                <div class="dashboard-card waste-card" data-aos="fade-up">
                     <div class="card-header">
-                        <i class="fas fa-recycle"></i>
-                        <h3>Chiqindilar</h3>
+                        <div class="card-title">
+                            <i class="fas fa-recycle"></i>
+                            <h3>Chiqindilar Boshqaruvi</h3>
+                        </div>
                     </div>
                     <div class="card-content">
                         <div class="waste-stats">
-                            <div class="waste-item plastic">
-                                <span>Plastik</span>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" style="width: 65%"></div>
+                            <div class="waste-type">
+                                <div class="waste-info">
+                                    <span class="waste-name">Plastik</span>
+                                    <span class="waste-percent">65%</span>
                                 </div>
-                                <span>65%</span>
+                                <div class="waste-bar">
+                                    <div class="waste-fill plastic" style="width: 65%"></div>
+                                </div>
                             </div>
-                            <div class="waste-item glass">
-                                <span>Shisha</span>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" style="width: 45%"></div>
+                            <div class="waste-type">
+                                <div class="waste-info">
+                                    <span class="waste-name">Shisha</span>
+                                    <span class="waste-percent">45%</span>
                                 </div>
-                                <span>45%</span>
+                                <div class="waste-bar">
+                                    <div class="waste-fill glass" style="width: 45%"></div>
+                                </div>
                             </div>
-                            <div class="waste-item metal">
-                                <span>Metall</span>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" style="width: 30%"></div>
+                            <div class="waste-type">
+                                <div class="waste-info">
+                                    <span class="waste-name">Metall</span>
+                                    <span class="waste-percent">30%</span>
                                 </div>
-                                <span>30%</span>
+                                <div class="waste-bar">
+                                    <div class="waste-fill metal" style="width: 30%"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Energy Saving -->
-                <div class="monitor-card energy-saving">
+                <!-- Energy Consumption -->
+                <div class="dashboard-card energy-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="card-header">
-                        <i class="fas fa-bolt"></i>
-                        <h3>Energiya Tejash</h3>
+                        <div class="card-title">
+                            <i class="fas fa-bolt"></i>
+                            <h3>Energiya Sarfi</h3>
+                        </div>
                     </div>
                     <div class="card-content">
-                        <div class="energy-stats">
-                            <div class="energy-item">
-                                <span>Bugun Tejangan</span>
-                                <span class="energy-value">15.2 kWh</span>
+                        <div class="energy-chart">
+                            <canvas id="energyChart"></canvas>
+                        </div>
+                        <div class="energy-summary">
+                            <div class="energy-stat">
+                                <span>Bugun</span>
+                                <span class="stat-value">15.2 kWh</span>
                             </div>
-                            <div class="energy-item">
-                                <span>Oylik Tejam</span>
-                                <span class="energy-value">285 kWh</span>
-                            </div>
-                            <div class="energy-item">
-                                <span>CO2 Qisqartirish</span>
-                                <span class="energy-value">120 kg</span>
+                            <div class="energy-stat">
+                                <span>Oylik</span>
+                                <span class="stat-value">285 kWh</span>
                             </div>
                         </div>
                     </div>
@@ -182,68 +356,131 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Interactive Map -->
+    <section id="map" class="map-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Global Ekologik Xarita</h2>
+                <p>Dunyoning ekologik muammolarini real vaqt rejimida kuzatish</p>
+            </div>
+
+            <div class="map-container" data-aos="zoom-in">
+                <div class="map-visual">
+                    <div class="world-map">
+                        <!-- Map will be generated with JavaScript -->
+                    </div>
+                    <div class="map-overlay">
+                        <div class="map-controls">
+                            <button class="map-btn active" data-layer="air">Havo Sifati</button>
+                            <button class="map-btn" data-layer="water">Suv Sifati</button>
+                            <button class="map-btn" data-layer="forest">O'rmonlar</button>
+                            <button class="map-btn" data-layer="waste">Chiqindilar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Showcase -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Faol Loyihalar</h2>
+            <div class="section-header" data-aos="fade-up">
+                <h2>Faol Loyihalar</h2>
+                <p>Jamoamiz tomonidan amalga oshirilayotgan ekologik loyihalar</p>
+            </div>
+
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card" data-aos="flip-left">
                     <div class="project-image">
-                        <i class="fas fa-tree"></i>
+                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Yashil Shahar">
+                        <div class="project-badge">Yangi</div>
                     </div>
                     <div class="project-content">
-                        <h3>Yashil Shahar</h3>
-                        <p>Shahar atrofida 10,000 ta yangi daraxt ekish loyihasi</p>
-                        <div class="project-progress">
-                            <div class="progress-info">
-                                <span>Majburiyat: 10,000</span>
-                                <span>Ekildi: 7,542</span>
+                        <h3>Yashil Shahar Tashabbusi</h3>
+                        <p>Shaharlarni yashil maydonlar bilan boyitish va uglerod izini kamaytirish</p>
+                        <div class="project-stats">
+                            <div class="project-stat">
+                                <i class="fas fa-tree"></i>
+                                <span>10,000 daraxt</span>
                             </div>
+                            <div class="project-stat">
+                                <i class="fas fa-users"></i>
+                                <span>5,000 ishtirokchi</span>
+                            </div>
+                        </div>
+                        <div class="project-progress">
                             <div class="progress-bar">
                                 <div class="progress-fill" style="width: 75%"></div>
                             </div>
+                            <span>75% bajarildi</span>
                         </div>
-                        <button class="btn-project">Qo'shilish</button>
+                        <button class="btn-project">
+                            <i class="fas fa-hand-holding-heart"></i>
+                            Qo'shilish
+                        </button>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-aos="flip-left" data-aos-delay="100">
                     <div class="project-image">
-                        <i class="fas fa-trash-alt"></i>
+                        <img src="https://images.unsplash.com/photo-1584267385494-9fdd9a71ad75?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Okean Tozalash">
+                        <div class="project-badge urgent">Zarur</div>
                     </div>
                     <div class="project-content">
-                        <h3>Toza Daryo</h3>
-                        <p>Daryo bo'yidagi chiqindilarni tozalash kampaniyasi</p>
-                        <div class="project-progress">
-                            <div class="progress-info">
-                                <span>Maqsad: 50 km</span>
-                                <span>Tozalandi: 32 km</span>
+                        <h3>Okean Tozalash Kampaniyasi</h3>
+                        <p>Plastik chiqindilardan okeanlarni tozalash va dengiz hayotini muhofaza qilish</p>
+                        <div class="project-stats">
+                            <div class="project-stat">
+                                <i class="fas fa-trash"></i>
+                                <span>50 tonna</span>
                             </div>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="width: 64%"></div>
+                            <div class="project-stat">
+                                <i class="fas fa-water"></i>
+                                <span>100 km sohil</span>
                             </div>
                         </div>
-                        <button class="btn-project">Qo'shilish</button>
+                        <div class="project-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 45%"></div>
+                            </div>
+                            <span>45% bajarildi</span>
+                        </div>
+                        <button class="btn-project">
+                            <i class="fas fa-hand-holding-heart"></i>
+                            Qo'shilish
+                        </button>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-aos="flip-left" data-aos-delay="200">
                     <div class="project-image">
-                        <i class="fas fa-solar-panel"></i>
+                        <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Quyosh Energiyasi">
+                        <div class="project-badge">Trend</div>
                     </div>
                     <div class="project-content">
-                        <h3>Quyosh Energiyasi</h3>
-                        <p>Maktab va jamoat binolariga quyosh panellari o'rnatish</p>
-                        <div class="project-progress">
-                            <div class="progress-info">
-                                <span>Maqsad: 25 ta</span>
-                                <span>O'rnatildi: 18 ta</span>
+                        <h3>Quyosh Energiyasi Loyihasi</h3>
+                        <p>Qishloq joylariga quyosh panellari o'rnatish va energiya mustaqilligini oshirish</p>
+                        <div class="project-stats">
+                            <div class="project-stat">
+                                <i class="fas fa-solar-panel"></i>
+                                <span>500 panel</span>
                             </div>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="width: 72%"></div>
+                            <div class="project-stat">
+                                <i class="fas fa-home"></i>
+                                <span>25 qishloq</span>
                             </div>
                         </div>
-                        <button class="btn-project">Qo'shilish</button>
+                        <div class="project-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 60%"></div>
+                            </div>
+                            <span>60% bajarildi</span>
+                        </div>
+                        <button class="btn-project">
+                            <i class="fas fa-hand-holding-heart"></i>
+                            Qo'shilish
+                        </button>
                     </div>
                 </div>
             </div>
@@ -253,45 +490,68 @@
     <!-- Ranking Section -->
     <section id="ranking" class="ranking">
         <div class="container">
-            <h2 class="section-title">Eng Faol Ekologlar</h2>
-            <div class="ranking-table">
-                <div class="table-header">
-                    <span>O'rin</span>
-                    <span>Ism</span>
-                    <span>Ball</span>
-                    <span>Daraxtlar</span>
-                    <span>Status</span>
+            <div class="section-header" data-aos="fade-up">
+                <h2>Ekologik Reyting</h2>
+                <p>Eng faol ekologlar va ularning yutuqlari</p>
+            </div>
+
+            <div class="ranking-container">
+                <div class="ranking-sidebar" data-aos="fade-right">
+                    <div class="user-profile-card">
+                        <div class="profile-header">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face" alt="User">
+                            <div class="profile-info">
+                                <h4>Ali Valiyev</h4>
+                                <span class="user-level">Eko Elchi</span>
+                            </div>
+                        </div>
+                        <div class="profile-stats">
+                            <div class="profile-stat">
+                                <span>Reyting</span>
+                                <strong>#1</strong>
+                            </div>
+                            <div class="profile-stat">
+                                <span>Ball</span>
+                                <strong>2,845</strong>
+                            </div>
+                            <div class="profile-stat">
+                                <span>Daraxtlar</span>
+                                <strong>142</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="achievements">
+                        <h4>Yutuqlar</h4>
+                        <div class="achievement-list">
+                            <div class="achievement">
+                                <i class="fas fa-medal gold"></i>
+                                <span>Eko Elchi</span>
+                            </div>
+                            <div class="achievement">
+                                <i class="fas fa-tree"></i>
+                                <span>100+ Daraxt</span>
+                            </div>
+                            <div class="achievement">
+                                <i class="fas fa-recycle"></i>
+                                <span>Recycling Master</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="table-body">
-                    <div class="table-row top-1">
-                        <span class="rank">1</span>
-                        <span class="user">
-                            <img src="https://via.placeholder.com/40" alt="User">
-                            <span>Ali Valiyev</span>
-                        </span>
-                        <span class="points">2,845</span>
-                        <span class="trees">142</span>
-                        <span class="badge gold">Eko Elchi</span>
-                    </div>
-                    <div class="table-row top-2">
-                        <span class="rank">2</span>
-                        <span class="user">
-                            <img src="https://via.placeholder.com/40" alt="User">
-                            <span>Zarina Xolmatova</span>
-                        </span>
-                        <span class="points">2,541</span>
-                        <span class="trees">127</span>
-                        <span class="badge silver">Eko Jangchi</span>
-                    </div>
-                    <div class="table-row top-3">
-                        <span class="rank">3</span>
-                        <span class="user">
-                            <img src="https://via.placeholder.com/40" alt="User">
-                            <span>Bahodir Rahimov</span>
-                        </span>
-                        <span class="points">2,315</span>
-                        <span class="trees">115</span>
-                        <span class="badge bronze">Eko Qahramon</span>
+
+                <div class="ranking-main" data-aos="fade-left">
+                    <div class="ranking-table">
+                        <div class="table-header">
+                            <span>O'rin</span>
+                            <span>Foydalanuvchi</span>
+                            <span>Ball</span>
+                            <span>Daraxtlar</span>
+                            <span>Status</span>
+                        </div>
+                        <div class="table-body">
+                            <!-- Top 10 users will be populated by JavaScript -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -304,35 +564,63 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <i class="fas fa-leaf"></i>
-                        <span>Yashil Yer</span>
+                        <i class="fas fa-seedling"></i>
+                        <span>EcoWorld</span>
                     </div>
                     <p>Kelajagimizni yashil va toza qoldirish uchun birgalikda harakat qilamiz.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
                 </div>
+
                 <div class="footer-section">
-                    <h4>Tez Havolalar</h4>
+                    <h4>Platforma</h4>
                     <ul>
-                        <li><a href="#home">Bosh Sahifa</a></li>
-                        <li><a href="#monitoring">Monitoring</a></li>
-                        <li><a href="#projects">Loyihalar</a></li>
-                        <li><a href="#ranking">Reyting</a></li>
+                        <li><a href="#">Havo Monitoringi</a></li>
+                        <li><a href="#">Suv Sifati</a></li>
+                        <li><a href="#">Chiqindilar Boshqaruvi</a></li>
+                        <li><a href="#">Energiya Tejash</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-section">
-                    <h4>Aloqa</h4>
+                    <h4>Loyihalar</h4>
                     <ul>
-                        <li><i class="fas fa-envelope"></i> info@yashilyer.uz</li>
-                        <li><i class="fas fa-phone"></i> +998 90 123 45 67</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Toshkent, O'zbekiston</li>
+                        <li><a href="#">Yashil Shahar</a></li>
+                        <li><a href="#">Okean Tozalash</a></li>
+                        <li><a href="#">Quyosh Energiyasi</a></li>
+                        <li><a href="#">Daraq Ekish</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Yordam</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Qo'llanma</a></li>
+                        <li><a href="#">Aloqa</a></li>
+                        <li><a href="#">Qo'llab-quvvatlash</a></li>
                     </ul>
                 </div>
             </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2024 Yashil Yer. Barcha huquqlar himoyalangan.</p>
+                <p>&copy; 2024 EcoWorld. Barcha huquqlar himoyalangan.</p>
+                <div class="footer-links">
+                    <a href="#">Maxfiylik</a>
+                    <a href="#">Shartlar</a>
+                    <a href="#">Cookie</a>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
